@@ -1,12 +1,12 @@
 import { createApp } from 'vue'
 import App from './index.vue'
-import 'virtual:uno.css'
-createApp(App).mount(createRootElement())
+// import 'virtual:uno.css'
 
-function createRootElement() {
+const createRootElement = () => {
   const root = document.createElement('div')
   root.id = 'mintnoii-bebop'
   document.body.append(root)
-
   return root
 }
+
+createApp(App).mount(createRootElement())

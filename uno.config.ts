@@ -1,17 +1,16 @@
-// uno.config.ts
-import { defineConfig, presetAttributify,presetWind  } from 'unocss'
+// import { defineConfig, presetAttributify,presetWind  } from 'unocss'
 
-export default defineConfig({
-  shortcuts: [
-    // ...
-  ],
-  theme: {
-    colors: {
-      // ...
-    }
-  },
-  presets: [
-    presetWind(),
-    presetAttributify(),
-  ],
-})
+// export default defineConfig({
+//   shortcuts: [
+//     // ...
+//   ],
+//   theme: {
+//     colors: {
+//       // ...
+//     }
+//   },
+//   presets: [
+//     presetWind(),
+//     presetAttributify(),
+//   ],
+// })

@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Vue Vite Chrome Extension Example",
+    "name": "Bebop",
     "description": "Vue Vite Chrome Extension made with 'crxjs': https://github.com/crxjs/chrome-extension-tools",
     "version": "1.0.0",
     "action": {
@@ -14,9 +14,15 @@
     "content_scripts": [
     {
       "all_frames": true,
-      "js": ["src/content/index.ts"],
+      "js": ["src/content/main.ts"],
       "matches": ["*://*/*"],
       "run_at": "document_end"
     }
-  ]
+  ],
+  "icons": {
+    "16": "public/logo.png",
+    "48": "public/logo.png",
+    "64": "public/logo.png",
+    "128": "public/logo.png"
+  }
 }
