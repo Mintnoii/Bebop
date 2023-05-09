@@ -1,19 +1,18 @@
 <script setup>
 	import { RouterLink, RouterView } from 'vue-router'
-	import HelloWorld from '@/components/HelloWorld.vue'
 </script>
 
 <template>
   	<header>
-    	<img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
+      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="130" height="74" />
+      <div>
+        options 页面
+        <div class="bg-cyan w-40px">我是个按钮</div>
+      </div>
     	<div class="wrapper">
-      		<HelloWorld msg="You did it!" />
-
       		<nav>
         		<RouterLink to="/">Home</RouterLink>
         		<RouterLink to="/about">About</RouterLink>
-        		<RouterLink to="/contact">Contact</RouterLink>
       		</nav>
     	</div>
   	</header>
@@ -21,8 +20,6 @@
 </template>
 
 <style>
-@import '@/assets/base.css';
-
 #app {
     min-width: 500px;
 	max-width: 1280px;

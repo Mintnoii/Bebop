@@ -1,6 +1,6 @@
 <template>
-  <div class="mintnoii-crx-container">
-    <button class="button" @click="handleClick">Mintnoii</button>
+  <div class="mintnoii-bebop-container">
+    <button class="button" @click="handleClick">Bebop</button>
     <Teleport to="body">
       <DevPanel v-model:model-value="showDevPanel"/>
     </Teleport>
@@ -19,7 +19,7 @@ const handleClick = () => {
 </script>
 
 <style>
-#mintnoii-crx {
+#mintnoii-bebop {
   position: fixed;
   bottom: 10vh;
   right: 10px;
@@ -28,7 +28,7 @@ const handleClick = () => {
 </style>
 
 <style lang="scss" scoped>
-.mintnoii-crx-container {
+.mintnoii-bebop-container {
   .button {
   padding: 10px;
   color: #fff;

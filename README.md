@@ -3,10 +3,12 @@
 
 This template should help get you started developing a Vue 3 Chrome Extension in Vite using the [rxjs/vite-plugin](https://github.com/crxjs/chrome-extension-tools)
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## 开发
 
+- `yarn`
+
+- `yarn dev`
 ## Customize configuration
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
@@ -21,7 +23,7 @@ npm init vite@latest
 npm i @crxjs/vite-plugin -D
 ```
 ## Update the Vite Config
-Setup the `vite.config.js` file as the following:
+Setup the `vite.config.ts` file as the following:
 ```js
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
