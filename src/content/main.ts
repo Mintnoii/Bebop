@@ -1,6 +1,5 @@
 import { createApp } from 'vue'
-import App from './index.vue'
-// import 'virtual:uno.css'
+import App from './App.vue'
 
 const createRootElement = () => {
   const root = document.createElement('div')
