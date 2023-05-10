@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  	<main>
-	    Home123
-  	</main>
+  <main>
+    Bebop! go!
+  </main>
 </template>

@@ -1,12 +1,12 @@
 <template>
   <div class="dev-panel" v-show="showPanel">
-     <div class="drawer-header">
-        <span class="back-button" @click="closePanel">关闭</span>
-      </div>
-      <div class="drawer-content">
-        sdfsdfd
-        <slot></slot>
-      </div>
+    <div class="drawer-header">
+      <span class="back-button" @click="closePanel">关闭</span>
+    </div>
+    <div class="drawer-content">
+      content
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -20,8 +20,6 @@ const emit = defineEmits(['update:modelValue'])
 
 const showPanel = useVModel(props, 'modelValue', emit)
 const closePanel = () => {
-    console.log('sdfsdfdsdf');
-
   showPanel.value = false
 }
 </script>

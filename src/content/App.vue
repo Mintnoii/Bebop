@@ -1,21 +1,17 @@
 <template>
-  <div class="mintnoii-bebop-container">
-    <button class="button" @click="handleClick">Bebop</button>
+  <div>
+    <div class="rounded-lg cursor-pointer bg-gray-500 w-fit p-10px" @click="toggle()">Bebop</div>
     <Teleport to="body">
-      <DevPanel v-model:model-value="showDevPanel"/>
+      <DevPanel v-model:model-value="showDevPanel" />
     </Teleport>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { useToggle } from '@vueuse/core'
 import DevPanel from './dev-panel.vue'
+const [showDevPanel, toggle] = useToggle(false)
 
-const showDevPanel = ref(false)
-
-const handleClick = () => {
-  showDevPanel.value = true
-}
 </script>
 
 <style>
@@ -25,24 +21,4 @@ const handleClick = () => {
   right: 10px;
   z-index: 99999;
 }
-</style>
-
-<style lang="scss" scoped>
-.mintnoii-bebop-container {
-  .button {
-  padding: 10px;
-  color: #fff;
-  background-color: #ff8e3c;
-  border: none;
-  border-radius: 20px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.button:hover {
-  background-color: #ffad4b;
-}
-}
-
 </style>
