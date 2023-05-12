@@ -8,9 +8,9 @@ import BebopLogo from '@/components/BebopLogo.vue'
     <header>
       <BebopLogo />
       <div class="wrapper">
-        <nav>
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/about">About</RouterLink>
+        <nav class="flex justify-around">
+          <RouterLink to="/">主页</RouterLink>
+          <RouterLink to="/about">简介</RouterLink>
         </nav>
       </div>
     </header>
