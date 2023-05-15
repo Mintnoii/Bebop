@@ -1,9 +1,9 @@
 <template>
-  <div class="dev-panel" v-show="showPanel">
-    <div class="drawer-header">
-      <span class="back-button" @click="closePanel">关闭</span>
+  <div class="fixed flex flex-col right-10px bottom-8vh p-10px w-20vw h-30vh bg-green-300 rounded-10px z-999 text-18px" v-show="showPanel">
+    <div class="p-10px h-30px">
+      <span class="cursor-pointer" @click="closePanel">关闭</span>
     </div>
-    <div class="drawer-content">
+    <div class="p-10px flex-1">
       content
       <slot></slot>
     </div>
@@ -23,33 +23,3 @@ const closePanel = () => {
   showPanel.value = false
 }
 </script>
-
-<style lang="scss" scoped>
-.dev-panel {
-  position: fixed;
-  right: 0px;
-  bottom: 20vh;
-  height: 30vh;
-  width: 20vw;
-  padding: 10px;
-  background-color: #31eeaf;
-  border: none;
-  border-radius: 10px;
-  font-size: 18px;
-  z-index: 99999;
-}
-
-.drawer-content {
-  padding: 20px;
-  height: calc(100% - 40px);
-  overflow: auto;
-}
-
-.drawer-header {
-  padding: 12px;
-}
-
-.back-button {
-  cursor: pointer;
-}
-</style>
